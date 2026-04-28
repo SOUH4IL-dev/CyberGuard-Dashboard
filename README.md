@@ -1,7 +1,4 @@
-Hada l-README dyalk m9asam 3la 3 (3 parts) bch yjik sahel t-copih mli tkon f l-mobile aw ila knti k-t3ani m3a selection dyal text twil:
 
-### Part 1: Header to Architecture
-```markdown
 # 🛡️ Cyber Security Dashboard v1
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)](https://www.python.org/)
@@ -37,13 +34,11 @@ A **feature-based** modular architecture:
 * **Real-time Engine:** WebSocket client for live dashboard updates.
 * **Component Library:** Built with TailwindCSS for UI consistency.
 * **State Management:** Data synchronization with React Query.
-```
 
 ---
 
 ### Part 2: Getting Started
-```markdown
----
+markdown
 
 ## 🚀 Getting Started
 
@@ -87,12 +82,11 @@ cd frontend
 npm install
 npm run dev
 ```
-```
 
 ---
 
 ### Part 3: Features to Author
-```markdown
+markdown
 ---
 
 ## 📊 Features Breakdown
