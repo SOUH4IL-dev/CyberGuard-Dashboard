@@ -1,4 +1,7 @@
+Hada l-README dyalk m9asam 3la 3 (3 parts) bch yjik sahel t-copih mli tkon f l-mobile aw ila knti k-t3ani m3a selection dyal text twil:
 
+### Part 1: Header to Architecture
+```markdown
 # 🛡️ Cyber Security Dashboard v1
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)](https://www.python.org/)
