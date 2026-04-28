@@ -1,3 +1,4 @@
+
 # 🛡️ Cyber Security Dashboard v1
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)](https://www.python.org/)
@@ -33,7 +34,12 @@ A **feature-based** modular architecture:
 * **Real-time Engine:** WebSocket client for live dashboard updates.
 * **Component Library:** Built with TailwindCSS for UI consistency.
 * **State Management:** Data synchronization with React Query.
+```
 
+---
+
+### Part 2: Getting Started
+```markdown
 ---
 
 ## 🚀 Getting Started
@@ -48,3 +54,86 @@ A **feature-based** modular architecture:
 1. Copy the example environment file:
    ```bash
    cp .env.example .env
+   ```
+2. Configure the variables:
+   ```env
+   DATABASE_URL=postgresql://user:password@localhost:5432/db_name
+   SECRET_KEY=your_secret_key_here
+   JWT_ALGORITHM=HS256
+   ACCESS_TOKEN_EXPIRE_MINUTES=30
+   ```
+
+### Installation & Run
+
+#### Option 1: Docker (Recommended)
+```bash
+docker-compose up --build
+```
+
+#### Option 2: Local Development
+**Backend:**
+```bash
+cd backend
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+```
+
+**Frontend:**
+```bash
+cd frontend
+npm install
+npm run dev
+```
+```
+
+---
+
+### Part 3: Features to Author
+```markdown
+---
+
+## 📊 Features Breakdown
+
+| Module | Description |
+| :--- | :--- |
+| **Assets** | Manage and track your network inventory. |
+| **Scans** | Trigger Nmap & Subdomain enumeration tasks. |
+| **Findings** | Track, classify, and manage vulnerabilities. |
+| **Alerts** | Instant notifications via WebSocket. |
+| **Reports** | Automated PDF/JSON summary generation. |
+| **Auth** | RBAC-based security with JWT. |
+
+---
+
+## 🗺️ Roadmap
+- [x] Modular backend architecture
+- [x] Asset & scan system
+- [x] Findings engine
+- [x] Real-time alerts (WebSocket)
+- [ ] **v2:** AI-based vulnerability prioritization
+- [ ] **v2:** Advanced SOC dashboard analytics
+- [ ] **v2:** Cloud asset integration (AWS/Azure)
+
+---
+
+## 🔐 Security Disclaimer
+This project is intended strictly for **educational purposes** and **authorized security testing** within a controlled lab environment. Unauthorized scanning or monitoring of systems without explicit permission is illegal and strictly discouraged.
+
+---
+
+## 🤝 Contributing
+Contributions are welcome! If you'd like to improve the scanning adapters or add new dashboard features:
+1. Fork the repository.
+2. Create a feature branch (`git checkout -b feature/amazing-feature`).
+3. Commit your changes.
+4. Push to the branch.
+5. Open a Pull Request.
+
+---
+
+## 👨‍💻 Author
+**Souhail**
+* [GitHub](https://github.com/SOUH4IL-dev)
+
+⭐ *If this project helped you, please consider giving it a star!*
+```
