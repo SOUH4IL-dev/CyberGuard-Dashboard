@@ -1,0 +1,144 @@
+cyber-security-dashboard/
+|
++-- backend/
+|   +-- app/
+|   |   +-- main.py
+|   |   +-- api/
+|   |   |   +-- deps.py
+|   |   |   +-- middleware/
+|   |   |   |   +-- audit.py
+|   |   |   |   +-- rate_limit.py
+|   |   |   +-- v1/
+|   |   |       +-- api.py
+|   |   |       +-- endpoints/
+|   |   |           +-- auth.py
+|   |   |           +-- dashboard.py
+|   |   |           +-- assets.py
+|   |   |           +-- findings.py
+|   |   |           +-- scans.py
+|   |   |           +-- reports.py
+|   |   |           +-- users.py
+|   |   |           +-- websocket.py
+|   |   +-- core/
+|   |   |   +-- config.py
+|   |   |   +-- jwt.py
+|   |   |   +-- logging.py
+|   |   |   +-- security.py
+|   |   +-- db/
+|   |   |   +-- base.py
+|   |   |   +-- session.py
+|   |   +-- models/
+|   |   |   +-- user.py
+|   |   |   +-- asset.py
+|   |   |   +-- scan.py
+|   |   |   +-- finding.py
+|   |   |   +-- alert.py
+|   |   |   +-- report.py
+|   |   +-- schemas/
+|   |   |   +-- auth.py
+|   |   |   +-- dashboard.py
+|   |   |   +-- asset.py
+|   |   |   +-- scan.py
+|   |   |   +-- finding.py
+|   |   |   +-- report.py
+|   |   +-- repositories/
+|   |   |   +-- user_repository.py
+|   |   |   +-- asset_repository.py
+|   |   |   +-- scan_repository.py
+|   |   |   +-- finding_repository.py
+|   |   +-- services/
+|   |   |   +-- auth_service.py
+|   |   |   +-- dashboard_service.py
+|   |   |   +-- asset_service.py
+|   |   |   +-- scanner_service.py
+|   |   |   +-- finding_service.py
+|   |   |   +-- report_service.py
+|   |   |   +-- alert_service.py
+|   |   +-- tasks/
+|   |   |   +-- scan_tasks.py
+|   |   |   +-- report_tasks.py
+|   |   +-- integrations/
+|   |   |   +-- scanners/
+|   |   |   |   +-- nmap_adapter.py
+|   |   |   |   +-- subdomain_adapter.py
+|   |   |   +-- enrichment/
+|   |   |       +-- geoip_adapter.py
+|   |   |       +-- cve_adapter.py
+|   |   +-- websocket/
+|   |   |   +-- manager.py
+|   |   +-- utils/
+|   |       +-- datetime.py
+|   |       +-- severity.py
+|   +-- tests/
+|   |   +-- api/
+|   |   +-- services/
+|   +-- requirements.txt
+|   +-- Dockerfile
+|
++-- frontend/
+|   +-- public/
+|   +-- src/
+|   |   +-- app/
+|   |   |   +-- router.jsx
+|   |   |   +-- providers.jsx
+|   |   +-- components/
+|   |   |   +-- ui/
+|   |   |   +-- charts/
+|   |   |   +-- tables/
+|   |   +-- features/
+|   |   |   +-- auth/
+|   |   |   |   +-- components/
+|   |   |   |   +-- pages/
+|   |   |   +-- dashboard/
+|   |   |   |   +-- components/
+|   |   |   |   +-- pages/
+|   |   |   +-- assets/
+|   |   |   |   +-- components/
+|   |   |   |   +-- pages/
+|   |   |   +-- findings/
+|   |   |   |   +-- components/
+|   |   |   |   +-- pages/
+|   |   |   +-- scans/
+|   |   |   |   +-- components/
+|   |   |   |   +-- pages/
+|   |   |   +-- reports/
+|   |   |   |   +-- components/
+|   |   |   |   +-- pages/
+|   |   |   +-- settings/
+|   |   |       +-- pages/
+|   |   +-- hooks/
+|   |   +-- layouts/
+|   |   +-- lib/
+|   |   |   +-- axios.js
+|   |   |   +-- queryClient.js
+|   |   +-- services/
+|   |   |   +-- api.js
+|   |   |   +-- websocket.js
+|   |   +-- store/
+|   |   +-- styles/
+|   |   |   +-- globals.css
+|   |   |   +-- theme.css
+|   |   +-- types/
+|   |   +-- utils/
+|   |   +-- main.jsx
+|   +-- tailwind.config.js
+|   +-- Dockerfile
+|
++-- scripts/
+|   +-- port_scanner.py
+|   +-- subdomain_enum.py
+|   +-- seed_demo_data.py
+|
++-- docker/
+|   +-- docker-compose.yml
+|   +-- nginx/
+|       +-- default.conf
+|
++-- docs/
+|   +-- architecture.md
+|   +-- api.md
+|   +-- roadmap.md
+|   +-- threat-model.md
+|
++-- .env
++-- README.md
